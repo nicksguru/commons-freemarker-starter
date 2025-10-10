@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <groupId>guru.nicks.commons</groupId>
+        <artifactId>parent</artifactId>
+        <version>0.1.0-alpha.12</version><!-- [BVM] -->
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <!-- groupId is redundant (inherited from parent), but required by Maven Central -->
+    <groupId>guru.nicks.commons</groupId>
+    <artifactId>freemarker-starter</artifactId>
+    <version>${guru.nicks.commons.version}</version>
+
+    <name>Nicks.Guru Commons Freemarker Starter</name>
+    <description>Starter for rendering Freemarker templates</description>
+    <url>https://nicks.guru</url>
+
+    <licenses>
+        <license>
+            <name>GNU Lesser General Public License, Version 3</name>
+            <url>https://www.gnu.org/licenses/lgpl-3.0.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <name>Nick S.</name>
+            <email>job-offers@nicks.guru</email>
+            <organizationUrl>https://nicks.guru</organizationUrl>
+        </developer>
+    </developers>
+
+    <scm>
+        <connection>https://nicks.guru</connection>
+        <developerConnection>https://nicks.guru</developerConnection>
+        <url>https://nicks.guru</url>
+    </scm>
+
+    <dependencies>
+        <dependency>
+            <groupId>guru.nicks.commons</groupId>
+            <artifactId>cucumber-test-starter</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-freemarker</artifactId>
+        </dependency>
+
+        <!-- @Builder, @Slf4j, etc. -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+</project>

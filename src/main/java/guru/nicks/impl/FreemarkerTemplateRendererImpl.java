@@ -1,27 +1,27 @@
-package guru.nicks;
+package guru.nicks.impl;
+
+import guru.nicks.service.FreemarkerTemplateRenderer;
 
 import freemarker.template.Configuration;
 import freemarker.template.Template;
 import freemarker.template.TemplateException;
 import lombok.RequiredArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
-import org.springframework.stereotype.Component;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
+import org.springframework.stereotype.Service;
 import org.springframework.ui.freemarker.FreeMarkerTemplateUtils;
 
 import java.io.IOException;
 import java.util.Map;
 
-/**
- * Renders Freemarker templates.
- */
-@Component
-@Slf4j
+@ConditionalOnMissingBean(FreemarkerTemplateRenderer.class)
+@Service
 @RequiredArgsConstructor
-public class FreemarkerTemplateRenderer {
+public class FreemarkerTemplateRendererImpl implements FreemarkerTemplateRenderer {
 
     // DI
     private final Configuration configuration;
 
+    @Override
     public String render(String templateName, Map<?, ?> templateContext) {
         Template template;
 

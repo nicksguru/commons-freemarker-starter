@@ -1,7 +1,8 @@
 package guru.nicks.cucumber;
 
-import guru.nicks.FreemarkerTemplateRenderer;
 import guru.nicks.cucumber.world.TextWorld;
+import guru.nicks.impl.FreemarkerTemplateRendererImpl;
+import guru.nicks.service.FreemarkerTemplateRenderer;
 
 import freemarker.template.Configuration;
 import freemarker.template.Template;
@@ -48,7 +49,7 @@ public class FreemarkerTemplateRendererSteps {
     @Before
     public void beforeEachScenario() {
         closeableMocks = MockitoAnnotations.openMocks(this);
-        templateRenderer = new FreemarkerTemplateRenderer(configuration);
+        templateRenderer = new FreemarkerTemplateRendererImpl(configuration);
         templateContext = new HashMap<>();
     }
 

@@ -5,7 +5,7 @@ import java.util.Map;
 /**
  * Renders Freemarker templates.
  */
-public interface FreemarkerTemplateRenderer {
+public interface FreemarkerTemplateService {
 
     /**
      * Renders a template with the provided context data.

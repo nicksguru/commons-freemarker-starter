@@ -1,8 +1,8 @@
 package guru.nicks.cucumber;
 
 import guru.nicks.cucumber.world.TextWorld;
-import guru.nicks.impl.FreemarkerTemplateRendererImpl;
-import guru.nicks.service.FreemarkerTemplateRenderer;
+import guru.nicks.impl.FreemarkerTemplateServiceImpl;
+import guru.nicks.service.FreemarkerTemplateService;
 
 import freemarker.template.Configuration;
 import freemarker.template.Template;
@@ -29,10 +29,10 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.Mockito.when;
 
 /**
- * Step definitions for testing {@link FreemarkerTemplateRenderer}.
+ * Step definitions for testing {@link FreemarkerTemplateService}.
  */
 @RequiredArgsConstructor
-public class FreemarkerTemplateRendererSteps {
+public class FreemarkerTemplateServiceSteps {
 
     // DI
     private final TextWorld textWorld;
@@ -41,7 +41,7 @@ public class FreemarkerTemplateRendererSteps {
     private Configuration configuration;
     private AutoCloseable closeableMocks;
 
-    private FreemarkerTemplateRenderer templateRenderer;
+    private FreemarkerTemplateService templateRenderer;
     private String templateName;
     private Map<String, Object> templateContext;
     private String renderedOutput;
@@ -49,7 +49,7 @@ public class FreemarkerTemplateRendererSteps {
     @Before
     public void beforeEachScenario() {
         closeableMocks = MockitoAnnotations.openMocks(this);
-        templateRenderer = new FreemarkerTemplateRendererImpl(configuration);
+        templateRenderer = new FreemarkerTemplateServiceImpl(configuration);
         templateContext = new HashMap<>();
     }
 

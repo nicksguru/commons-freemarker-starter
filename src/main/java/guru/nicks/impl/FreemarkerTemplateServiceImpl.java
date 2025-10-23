@@ -1,22 +1,18 @@
 package guru.nicks.impl;
 
-import guru.nicks.service.FreemarkerTemplateRenderer;
+import guru.nicks.service.FreemarkerTemplateService;
 
 import freemarker.template.Configuration;
 import freemarker.template.Template;
 import freemarker.template.TemplateException;
 import lombok.RequiredArgsConstructor;
-import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
-import org.springframework.stereotype.Service;
 import org.springframework.ui.freemarker.FreeMarkerTemplateUtils;
 
 import java.io.IOException;
 import java.util.Map;
 
-@ConditionalOnMissingBean(FreemarkerTemplateRenderer.class)
-@Service
 @RequiredArgsConstructor
-public class FreemarkerTemplateRendererImpl implements FreemarkerTemplateRenderer {
+public class FreemarkerTemplateServiceImpl implements FreemarkerTemplateService {
 
     // DI
     private final Configuration configuration;

@@ -5,7 +5,7 @@
     <parent>
         <groupId>guru.nicks.commons</groupId>
         <artifactId>parent</artifactId>
-        <version>1.7.2</version><!-- [BVM] -->
+        <version>1.8.0</version><!-- [BVM] -->
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
@@ -16,7 +16,7 @@
 
     <name>Nicks.Guru Commons Freemarker Starter</name>
     <description>Starter for rendering Freemarker templates</description>
-    <url>https://github.com/nicksguru/commons-fremarker-starter</url>
+    <url>https://github.com/nicksguru/commons-freemarker-starter</url>
 
     <licenses>
         <license>
@@ -33,13 +33,13 @@
         </developer>
     </developers>
     <scm>
-        <connection>scm:git:git://github.com/nicksguru/commons-fremarker-starter.git</connection>
-        <developerConnection>scm:git:ssh://git@github.com/nicksguru/commons-fremarker-starter.git</developerConnection>
-        <url>https://github.com/nicksguru/commons-fremarker-starter</url>
+        <connection>scm:git:git://github.com/nicksguru/commons-freemarker-starter.git</connection>
+        <developerConnection>scm:git:ssh://git@github.com/nicksguru/commons-freemarker-starter.git</developerConnection>
+        <url>https://github.com/nicksguru/commons-freemarker-starter</url>
     </scm>
     <issueManagement>
         <system>GitHub Issues</system>
-        <url>https://github.com/nicksguru/commons-fremarker-starter/issues</url>
+        <url>https://github.com/nicksguru/commons-freemarker-starter/issues</url>
     </issueManagement>
 
     <dependencies>

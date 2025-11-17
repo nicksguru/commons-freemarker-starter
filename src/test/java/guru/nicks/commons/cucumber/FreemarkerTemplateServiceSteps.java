@@ -1,8 +1,8 @@
-package guru.nicks.cucumber;
+package guru.nicks.commons.cucumber;
 
-import guru.nicks.cucumber.world.TextWorld;
-import guru.nicks.impl.FreemarkerTemplateServiceImpl;
-import guru.nicks.service.FreemarkerTemplateService;
+import guru.nicks.commons.cucumber.world.TextWorld;
+import guru.nicks.commons.impl.FreemarkerTemplateServiceImpl;
+import guru.nicks.commons.service.FreemarkerTemplateService;
 
 import freemarker.template.Configuration;
 import freemarker.template.Template;

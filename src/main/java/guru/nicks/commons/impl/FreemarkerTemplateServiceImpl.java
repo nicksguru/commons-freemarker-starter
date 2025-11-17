@@ -1,6 +1,6 @@
-package guru.nicks.impl;
+package guru.nicks.commons.impl;
 
-import guru.nicks.service.FreemarkerTemplateService;
+import guru.nicks.commons.service.FreemarkerTemplateService;
 
 import freemarker.template.Configuration;
 import freemarker.template.Template;

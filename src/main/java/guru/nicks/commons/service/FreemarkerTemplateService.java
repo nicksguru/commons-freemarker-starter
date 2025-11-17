@@ -1,4 +1,4 @@
-package guru.nicks.service;
+package guru.nicks.commons.service;
 
 import java.util.Map;
 

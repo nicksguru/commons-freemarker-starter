@@ -1,7 +1,7 @@
-package guru.nicks.config;
+package guru.nicks.commons.config;
 
-import guru.nicks.impl.FreemarkerTemplateServiceImpl;
-import guru.nicks.service.FreemarkerTemplateService;
+import guru.nicks.commons.impl.FreemarkerTemplateServiceImpl;
+import guru.nicks.commons.service.FreemarkerTemplateService;
 
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.context.annotation.Bean;

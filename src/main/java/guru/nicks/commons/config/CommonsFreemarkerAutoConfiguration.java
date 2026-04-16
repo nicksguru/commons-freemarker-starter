@@ -2,6 +2,7 @@ package guru.nicks.commons.config;
 
 import guru.nicks.commons.impl.FreemarkerTemplateServiceImpl;
 import guru.nicks.commons.service.FreemarkerTemplateService;
+
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.autoconfigure.AutoConfiguration;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
